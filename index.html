@@ -3,31 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ristorante Cinese "Dragone d'Oro"</title>
+  <title>Ristorante Cinese "Dragone d'Oro" - Home</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #fff8f0;
       color: #333;
-      scroll-behavior: smooth; /* Scorrimento morbido tra sezioni */
     }
-
     header {
       background-color: #b22222;
       color: white;
       padding: 1.5rem;
       text-align: center;
-      position: sticky;  /* Fissa il header */
+      position: sticky;
       top: 0;
       z-index: 1000;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
+    header h1 { margin: 0; font-size: 2.5rem; }
     nav {
       background-color: #8b0000;
       display: flex;
@@ -38,18 +31,8 @@
       top: 90px;
       z-index: 999;
     }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffd700;
-    }
-
+    nav a { color: white; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: #ffd700; }
     .hero {
       background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
       background-size: cover;
@@ -62,131 +45,58 @@
       text-shadow: 2px 2px 4px #000;
       font-size: 2rem;
     }
-
-    .section {
+    .content {
       padding: 2rem;
       max-width: 1000px;
       margin: auto;
       text-align: center;
     }
-
-    .section h2 {
-      color: #b22222;
-      margin-bottom: 1rem;
-    }
-
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .menu-item {
-      background-color: #ffe4c4;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 5px #ccc;
-    }
-
-    .menu-item h3 {
-      margin: 0;
-      color: #8b0000;
-    }
-
+    .content h2 { color: #b22222; }
+    .content p { font-size: 1.1rem; line-height: 1.6; }
     footer {
       background-color: #b22222;
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
-
     @media (max-width: 600px) {
-      .hero {
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 1rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 1rem;
-        top: 110px;
-      }
+      .hero { font-size: 1.5rem; text-align: center; padding: 1rem; }
+      nav { flex-direction: column; gap: 1rem; top: 110px; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Dragone d'Oro</h1>
-    <p>Autentica cucina cinese nel cuore della città</p>
-  </header>
+<header>
+  <h1>Dragone d'Oro</h1>
+  <p>Autentica cucina cinese nel cuore della città</p>
+</header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#menu">Menù</a>
-    <a href="#chisiamo">Chi siamo</a>
-    <a href="#contatti">Contatti</a>
-  </nav>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menù</a>
+  <a href="chisiamo.html">Chi siamo</a>
+  <a href="contatti.html">Contatti</a>
+</nav>
 
-  <div class="hero">
-    Benvenuti al Dragone d'Oro
-  </div>
+<div class="hero">
+  Benvenuti al Dragone d'Oro
+</div>
 
-  <!-- Sezione Menù -->
-  <div id="menu" class="section">
-    <h2>Menù</h2>
-    <p>Una selezione dei nostri piatti più popolari.</p>
+<div class="content">
+  <h2>Scopri la nostra tradizione</h2>
+  <p>
+    Il ristorante "Dragone d'Oro" offre un'esperienza culinaria autentica con piatti tradizionali della cucina cinese. Utilizziamo solo ingredienti freschi e selezionati, preparando ogni piatto con passione e rispetto per la tradizione.
+  </p>
+  <p>
+    Sia che tu voglia gustare un classico riso alla cantonese, degli involtini primavera croccanti o una deliziosa anatra alla pechinese, qui troverai sapori che ti trasporteranno in Oriente.
+  </p>
+</div>
 
-    <div class="menu-grid">
-      <div class="menu-item">
-        <h3>Involtini primavera</h3>
-        <p>€ 3,50</p>
-      </div>
-      <div class="menu-item">
-        <h3>Riso alla cantonese</h3>
-        <p>€ 5,00</p>
-      </div>
-      <div class="menu-item">
-        <h3>Pollo alle mandorle</h3>
-        <p>€ 7,50</p>
-      </div>
-      <div class="menu-item">
-        <h3>Spaghetti di soia con verdure</h3>
-        <p>€ 6,00</p>
-      </div>
-      <div class="menu-item">
-        <h3>Anatra alla pechinese</h3>
-        <p>€ 12,00</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Sezione Chi Siamo -->
-  <div id="chisiamo" class="section">
-    <h2>Chi siamo</h2>
-    <p>
-      Il “Dragone d’Oro” è un esempio di sito creato per mostrare agli studenti come si può costruire una pagina web con HTML e CSS.  
-      Non rappresenta un ristorante reale, ma serve per imparare la struttura, i testi, le immagini e l’organizzazione di un sito.
-    </p>
-  </div>
-
-  <!-- Sezione Contatti -->
-  <div id="contatti" class="section">
-    <h2>Contatti</h2>
-    <p><strong>Indirizzo:</strong> Via Esempio 123, Città</p>
-    <p><strong>Telefono:</strong> 0000 123456</p>
-    <p><strong>Email:</strong> info@dragoneoro.it</p>
-
-    <h3>Orari di apertura</h3>
-    <p>Lun – Dom: 12:00 – 23:00</p>
-  </div>
-
-  <footer>
-    &copy; 2025 Dragone d'Oro – Esempio didattico di HTML per studenti
-  </footer>
+<footer>
+  &copy; 2025 Dragone d'Oro – Tutti i diritti riservati
+</footer>
 
 </body>
 </html>
